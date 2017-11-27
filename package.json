@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://myname.github.io/myapp",
+  "homepage": "https://szalbik.github.io/Portfolio/",
   "dependencies": {
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
