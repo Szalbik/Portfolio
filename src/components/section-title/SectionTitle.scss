@@ -1,0 +1,10 @@
+.section-title {
+  margin-top: 20px;
+  .ui.divider {
+    color: #3699db;
+    &:not(.vertical):not(.horizontal) {
+      border-top: 2px solid #3699db;
+      border-bottom: 2px solid #3699db;
+    }
+  }
+}
