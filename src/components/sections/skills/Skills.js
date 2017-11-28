@@ -7,19 +7,22 @@ const Skills = () => (
   <div>
     <SectionTitle text="skills" />
 
-    <Grid column={4}>
+    <Grid column="equal">
       <Grid.Row>
-        <Grid.Column width={4}>
+        <Grid.Column width={3}>
           <ProgressCircle proc={65} text="html/css" />
         </Grid.Column>
-        <Grid.Column width={4}>
+        <Grid.Column width={3}>
           <ProgressCircle proc={50} text="es5/es6" />
         </Grid.Column>
-        <Grid.Column width={4}>
+        <Grid.Column width={3}>
           <ProgressCircle proc={65} text="react/redux" />
         </Grid.Column>
-        <Grid.Column width={4}>
+        <Grid.Column width={3}>
           <ProgressCircle proc={30} text="node" />
+        </Grid.Column>
+        <Grid.Column width={3}>
+          <ProgressCircle proc={50} text="ruby /rails" />
         </Grid.Column>
       </Grid.Row>
     </Grid>

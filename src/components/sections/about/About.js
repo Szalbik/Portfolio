@@ -19,45 +19,37 @@ class About extends React.Component {
                   <List.Content>Gorzów Wielkopolski</List.Content>
                 </List.Item>
                 <List.Item>
-                  <List.Icon name="phone square" />
-                  <List.Content>667 768 745</List.Content>
-                </List.Item>
-                <List.Item>
                   <List.Icon name="mail" />
                   <List.Content>
-                    <a href="mailto:szalbierz.d.k@gmail.com">
-                      szalbierz.d.k@gmail.com
-                    </a>
+                    <a href="mailto:szalbierz.d.k@gmail.com">Kontakt</a>
                   </List.Content>
                 </List.Item>
                 <List.Item>
-                  <List.Icon name="linkify" />
-                  <List.Content>
-                    <a href="http://www.damianszalbierz.pl/">My website</a>
-                  </List.Content>
-                </List.Item>
-              </List>
-              <List horizontal>
-                <List.Item>
+                  <List.Icon name="github" />
                   <List.Content>
                     <a
                       href="https://www.github.com/Szalbik"
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <List.Icon size="large" name="github" />
+                      My github
                     </a>
                   </List.Content>
                 </List.Item>
                 <List.Item>
-                  <a
-                    href="https://bitbucket.org/DamianSzalbierz/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <List.Icon size="large" name="bitbucket" />
-                  </a>
+                  <List.Icon name="bitbucket" />
+                  <List.Content>
+                    <a
+                      href="https://bitbucket.org/DamianSzalbierz/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      My bitbucket
+                    </a>
+                  </List.Content>
                 </List.Item>
+              </List>
+              <List horizontal>
                 <List.Item>
                   <List.Content>
                     <a
@@ -77,6 +69,17 @@ class About extends React.Component {
                       target="_blank"
                     >
                       <List.Icon size="large" name="linkedin square" />
+                    </a>
+                  </List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Content>
+                    <a
+                      href="https://twitter.com/SzalbierzDK"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <List.Icon size="large" name="twitter" />
                     </a>
                   </List.Content>
                 </List.Item>

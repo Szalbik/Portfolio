@@ -5,7 +5,7 @@ import './Header.scss';
 class Header extends React.Component {
   state = {
     activeItem: 'about',
-    menuItems: ['about', 'skills', 'experince', 'education', 'contact'],
+    menuItems: ['about', 'skills', 'experience', 'education', 'contact'],
   };
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
