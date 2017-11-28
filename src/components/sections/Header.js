@@ -1,6 +1,7 @@
 import React from 'react';
 import { Menu } from 'semantic-ui-react';
 import './Header.css';
+import './Header.scss';
 
 class Header extends React.Component {
   state = { activeItem: 'about' };
