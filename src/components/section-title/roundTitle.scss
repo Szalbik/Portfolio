@@ -1,0 +1,13 @@
+.round-title {
+  padding: 14px 0;
+  border: 1px solid #3699db;
+  background-color: #3699db;
+  border-radius: 20px;
+  text-align: center;
+  &__text {
+    color: rgba(255, 255, 255, 0.9);
+    margin-right: 40px;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+}

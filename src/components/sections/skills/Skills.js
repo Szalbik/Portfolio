@@ -2,9 +2,10 @@ import React from 'react';
 import { Grid } from 'semantic-ui-react';
 import SectionTitle from '../../section-title/SectionTitle';
 import ProgressCircle from '../../progress/ProgressCircle';
+import './Skills.scss';
 
 const Skills = () => (
-  <div>
+  <div className="skills">
     <SectionTitle text="skills" />
 
     <Grid column="equal">

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './title.scss';
+import './skewTitle.scss';
 
 const Title = ({ text }) => (
-  <div className="title">
-    <h2 className="title__text">{text}</h2>
+  <div className="skew-title">
+    <h2 className="skew-title__text">{text}</h2>
   </div>
 );
 
