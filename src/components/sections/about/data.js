@@ -1,8 +1,9 @@
 import React from 'react';
+import './data.scss';
 
 const Data = () => (
-  <div>
-    <h1>Data</h1>
+  <div className="data">
+    <h2 className="data__title">About me</h2>
   </div>
 );
 

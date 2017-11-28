@@ -1,0 +1,14 @@
+.data {
+  padding: 14px 0;
+  border: 1px solid #2f4152;
+  background-color: #2f4152;
+  transform: skewX(-20deg);
+  text-align: center;
+  &__title {
+    transform: skewX(20deg);
+    color: rgba(255, 255, 255, 0.9);
+    margin-right: 40px;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+}
