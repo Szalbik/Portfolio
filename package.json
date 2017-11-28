@@ -2,7 +2,11 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+<<<<<<< HEAD
   "homepage": "http://www.damianszalbierz.pl/",
+=======
+  "homepage": "damianszalbierz.pl",
+>>>>>>> 355e746d42bb4c4a4d525a9a2805759a301b2042
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
