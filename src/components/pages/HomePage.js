@@ -1,8 +1,8 @@
 import React from 'react';
-import ProgressCircle from '../progress/ProgressCircle';
 import Header from '../sections/header/Header';
 import Body from '../sections/body/Body';
 import About from '../sections/about/About';
+import Skills from '../sections/skills/Skills';
 
 class HomePage extends React.Component {
   state = {};
@@ -13,8 +13,8 @@ class HomePage extends React.Component {
         <Header />
         <Body>
           <About />
+          <Skills />
         </Body>
-        <ProgressCircle proc={60} text="html" />
       </div>
     );
   }

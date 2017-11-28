@@ -9,9 +9,10 @@ const ProgressCircle = ({ text, proc, maxWidth }) => (
       backgroundPadding={5}
       strokeWidth={6}
       percentage={proc}
-      textForPercentage={() => `${text}`}
+      textForPercentage={percentage => `${percentage}%`}
       initialAnimation
     />
+    <p>{text}</p>
   </div>
 );
 
