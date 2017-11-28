@@ -3,16 +3,20 @@
     background-color: #2f4152;
     text-transform: uppercase;
     &:hover {
-      background-color: #3699db;
-      opacity: 0.9;
+      background-color: #2f4152;
+      opacity: 0.7;
     }
   }
 }
 
 .ui.inverted.menu {
   .active.item {
-    background-color: #2f4152;
-    opacity: 0.7;
+    background-color: #3699db;
+    opacity: 0.9;
+    &:hover {
+      background-color: #3699db;
+      opacity: 0.7;
+    }
   }
 }
 

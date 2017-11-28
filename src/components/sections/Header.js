@@ -9,6 +9,7 @@ class Header extends React.Component {
 
   render() {
     const { activeItem } = this.state;
+    const menuItems = ['about', 'skills', 'experince', 'education', 'contact'];
     return (
       <div className="header">
         <div className="ui container">
@@ -16,31 +17,13 @@ class Header extends React.Component {
           <h3 className="header__subtitle">JUNIOR WEB DEVELOPER</h3>
 
           <Menu inverted widths={5}>
-            <Menu.Item
-              name="about"
-              active={activeItem === 'about'}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name="skills"
-              active={activeItem === 'skills'}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name="experince"
-              active={activeItem === 'experince'}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name="education"
-              active={activeItem === 'education'}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name="contact"
-              active={activeItem === 'contact'}
-              onClick={this.handleItemClick}
-            />
+            {menuItems.map(menu => (
+              <Menu.Item
+                name={menu}
+                active={activeItem === menu}
+                onClick={this.handleItemClick}
+              />
+            ))}
           </Menu>
         </div>
       </div>
