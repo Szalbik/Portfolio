@@ -15,24 +15,24 @@
 }
 
 .CircularProgressbar .CircularProgressbar-path {
-  stroke: #333;
+  stroke: #3699db;
   stroke-linecap: round;
   transition: stroke-dashoffset 0.5s ease 0s;
 }
 
 .CircularProgressbar .CircularProgressbar-trail {
-  stroke: #d6d6d6;
+  stroke: #d2d4d8;
 }
 
 .CircularProgressbar .CircularProgressbar-text {
-  fill: #333;
+  fill: #2f4152;
   font-size: 20px;
   dominant-baseline: middle;
   text-anchor: middle;
 }
 
 .CircularProgressbar .CircularProgressbar-background {
-  fill: #d6d6d6;
+  fill: #d2d4d8;
 }
 
 /*
@@ -46,7 +46,7 @@
  */
 .CircularProgressbar.CircularProgressbar-inverted
   .CircularProgressbar-background {
-  fill: #333;
+  fill: #3699db;
 }
 
 .CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text {
