@@ -3,13 +3,15 @@ import { Menu } from 'semantic-ui-react';
 import './Header.scss';
 
 class Header extends React.Component {
-  state = { activeItem: 'about' };
+  state = {
+    activeItem: 'about',
+    menuItems: ['about', 'skills', 'experince', 'education', 'contact'],
+  };
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
   render() {
-    const { activeItem } = this.state;
-    const menuItems = ['about', 'skills', 'experince', 'education', 'contact'];
+    const { activeItem, menuItems } = this.state;
     return (
       <div className="header">
         <div className="ui container">
@@ -19,6 +21,7 @@ class Header extends React.Component {
           <Menu inverted widths={5}>
             {menuItems.map(menu => (
               <Menu.Item
+                key={menu}
                 name={menu}
                 active={activeItem === menu}
                 onClick={this.handleItemClick}
