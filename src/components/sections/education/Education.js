@@ -6,7 +6,7 @@ class Education extends React.Component {
   state = {
     posts: {
       post_1: {
-        title: 'Pierwsza praca',
+        title: 'Pierwsza szkoła',
         year: '1994 - 2000',
         content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -14,7 +14,7 @@ class Education extends React.Component {
       nisi ut aliquip ex ea commodo consequat.`,
       },
       post_2: {
-        title: 'Pierwsza praca',
+        title: 'Pierwsza szkoła',
         year: '1994 - 2000',
         content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
