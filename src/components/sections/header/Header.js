@@ -19,7 +19,7 @@ class Header extends React.Component {
     this.setState({ activeItem: name });
     const el = document.querySelector(`.${name}`);
     if (window.pageYOffset < 100) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'end' });
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
     } else {
       el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
