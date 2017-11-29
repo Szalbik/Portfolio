@@ -1,7 +1,8 @@
 import React from 'react';
-import { Grid, List } from 'semantic-ui-react';
+import { Grid, List, Image } from 'semantic-ui-react';
 import SectionTitle from '../../section-title/SectionTitle';
 import './About.scss';
+import img from '../../../images/image.png';
 
 class About extends React.Component {
   state = {};
@@ -86,7 +87,15 @@ class About extends React.Component {
               </List>
             </Grid.Column>
 
-            <Grid.Column width={12} />
+            <Grid.Column width={12}>
+              <Image src={img} alt="image" width={220} floated="left" rounded />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </Grid.Column>
           </Grid.Row>
         </Grid>
       </div>
