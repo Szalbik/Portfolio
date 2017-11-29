@@ -6,28 +6,35 @@ class Header extends React.Component {
   state = {
     activeItem: 'about',
     menuItems: ['about', 'skills', 'experience', 'education', 'contact'],
-    scroll: '',
+    pageHeight: '0',
   };
 
   componentDidMount() {
     /* eslint-disable */
     window.addEventListener('scroll', () => {
-      this.setState({ scroll: pageYOffset });
+      this.setState({ pageHeight: window.pageYOffset });
     });
     /* eslint-enable */
   }
 
   handleItemClick = (e, { name }) => {
     this.setState({ activeItem: name });
-    document
-      .querySelector(`.${name}`)
-      .scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (window.pageYOffset < 201) {
+      document
+        .querySelector(`.${name}`)
+        .scrollIntoView({ behavior: 'smooth', block: 'center' });
+      console.log('center');
+    } else {
+      document
+        .querySelector(`.${name}`)
+        .scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   render() {
-    const { activeItem, menuItems, scroll } = this.state;
+    const { activeItem, menuItems, pageHeight } = this.state;
 
-    const fixedMenu = +scroll > 200 ? 'top' : null;
+    const fixedMenu = +pageHeight > 200 ? 'top' : null;
 
     return (
       <div className="header" ref={this.handleContextRef}>
