@@ -10,24 +10,18 @@ class Header extends React.Component {
   };
 
   componentDidMount() {
-    /* eslint-disable */
     window.addEventListener('scroll', () => {
       this.setState({ pageHeight: window.pageYOffset });
     });
-    /* eslint-enable */
   }
 
   handleItemClick = (e, { name }) => {
     this.setState({ activeItem: name });
-    if (window.pageYOffset < 201) {
-      document
-        .querySelector(`.${name}`)
-        .scrollIntoView({ behavior: 'smooth', block: 'center' });
-      console.log('center');
+    const el = document.querySelector(`.${name}`);
+    if (window.pageYOffset < 100) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'end' });
     } else {
-      document
-        .querySelector(`.${name}`)
-        .scrollIntoView({ behavior: 'smooth', block: 'start' });
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
