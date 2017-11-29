@@ -17,7 +17,12 @@ class Header extends React.Component {
     /* eslint-enable */
   }
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+  handleItemClick = (e, { name }) => {
+    this.setState({ activeItem: name });
+    document
+      .querySelector(`.${name}`)
+      .scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
 
   render() {
     const { activeItem, menuItems, scroll } = this.state;
@@ -36,6 +41,7 @@ class Header extends React.Component {
                 name={menu}
                 active={activeItem === menu}
                 onClick={this.handleItemClick}
+                disabled={menu === 'contact'}
               />
             ))}
           </Menu>
