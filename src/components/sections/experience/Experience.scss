@@ -1,0 +1,28 @@
+h2.ui.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: inherit;
+  color: #ebeced;
+  div.sub.header {
+    margin-left: 40px;
+    padding-top: 15px;
+    background-color: inherit;
+    color: #ebeced;
+  }
+}
+
+div.ui {
+  &.raised.segment {
+    background-color: rgb(47, 75, 92);
+    margin-bottom: 20px;
+  }
+
+  &.raised.segment:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &.horizontal.label {
+    color: #ebeced;
+    background-color: #3699db;
+  }
+}
