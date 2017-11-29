@@ -26,7 +26,7 @@ class Education extends React.Component {
 
   render() {
     return (
-      <div className="experience">
+      <div className="education">
         <SectionTitle text="education" round />
         <HeaderWithTitle {...this.state.posts.post_1} />
         <HeaderWithTitle {...this.state.posts.post_2} />
