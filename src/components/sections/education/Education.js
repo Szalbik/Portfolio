@@ -1,9 +1,8 @@
 import React from 'react';
 import SectionTitle from '../../section-title/SectionTitle';
 import HeaderWithTitle from '../../section-header-with-title/HeaderWithTitle';
-import './style.scss';
 
-class Experience extends React.Component {
+class Education extends React.Component {
   state = {
     posts: {
       post_1: {
@@ -28,7 +27,7 @@ class Experience extends React.Component {
   render() {
     return (
       <div className="experience">
-        <SectionTitle text="experience" round />
+        <SectionTitle text="education" round />
         <HeaderWithTitle {...this.state.posts.post_1} />
         <HeaderWithTitle {...this.state.posts.post_2} />
       </div>
@@ -36,4 +35,4 @@ class Experience extends React.Component {
   }
 }
 
-export default Experience;
+export default Education;
