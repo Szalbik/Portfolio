@@ -1,9 +1,9 @@
 import React from 'react';
 import { Grid, List, Image } from 'semantic-ui-react';
-
 import SectionTitle from '../../section-title/SectionTitle';
 import './About.scss';
 import img from '../../../images/image.png';
+import cv from '../../../files/cv.txt';
 
 class About extends React.Component {
   state = {};
@@ -51,8 +51,12 @@ class About extends React.Component {
                   </List.Content>
                 </List.Item>
                 <List.Item>
-                  <List.Icon name="file" />
-                  <List.Content />
+                  <List.Icon name="cloud download" />
+                  <List.Content>
+                    <a href={cv} download>
+                      Curriculum Vitae
+                    </a>
+                  </List.Content>
                 </List.Item>
               </List>
               <List horizontal>
