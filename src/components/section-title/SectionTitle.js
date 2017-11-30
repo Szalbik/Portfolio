@@ -17,7 +17,7 @@ const SectionTitle = props => (
           )}
         </Grid.Column>
 
-        <Grid.Column only="computer, tablet" computer={12} tablet={10}>
+        <Grid.Column only="computer tablet" computer={12} tablet={10}>
           <Divider />
         </Grid.Column>
       </Grid.Row>

@@ -12,9 +12,9 @@ class About extends React.Component {
     return (
       <div className="about">
         <SectionTitle text="about me" />
-        <Grid columns={2}>
+        <Grid>
           <Grid.Row>
-            <Grid.Column width={4}>
+            <Grid.Column computer={4} tablet={5} only="computer tablet">
               <List animated>
                 <List.Item>
                   <List.Icon name="marker" />
@@ -96,8 +96,20 @@ class About extends React.Component {
               </List>
             </Grid.Column>
 
-            <Grid.Column width={12}>
+            <Grid.Column only="computer tablet" computer={12} tablet={11}>
               <Image src={img} alt="image" width={220} floated="left" rounded />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </Grid.Column>
+
+            <Grid.Column only="mobile" mobile={16}>
+              <Image src={img} alt="image" width={220} rounded fluid />
+            </Grid.Column>
+            <Grid.Column only="mobile" mobile={16}>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
