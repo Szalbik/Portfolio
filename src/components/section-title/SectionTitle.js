@@ -7,9 +7,9 @@ import './SectionTitle.scss';
 
 const SectionTitle = props => (
   <div className="section-title">
-    <Grid columns={2}>
+    <Grid>
       <Grid.Row verticalAlign="middle">
-        <Grid.Column width={4}>
+        <Grid.Column computer={4} tablet={5} mobile={16}>
           {props.round ? (
             <RoundTitle text={props.text} />
           ) : (
@@ -17,7 +17,7 @@ const SectionTitle = props => (
           )}
         </Grid.Column>
 
-        <Grid.Column width={12}>
+        <Grid.Column only="computer, tablet" computer={12} tablet={10}>
           <Divider />
         </Grid.Column>
       </Grid.Row>
