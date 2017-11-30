@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, List, Image } from 'semantic-ui-react';
+
 import SectionTitle from '../../section-title/SectionTitle';
 import './About.scss';
 import img from '../../../images/image.png';
@@ -48,6 +49,10 @@ class About extends React.Component {
                       My bitbucket
                     </a>
                   </List.Content>
+                </List.Item>
+                <List.Item>
+                  <List.Icon name="file" />
+                  <List.Content />
                 </List.Item>
               </List>
               <List horizontal>
