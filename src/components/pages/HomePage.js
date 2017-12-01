@@ -5,6 +5,7 @@ import About from '../sections/about/About';
 import Skills from '../sections/skills/Skills';
 import Experience from '../sections/experience/Experience';
 import Education from '../sections/education/Education';
+import Contact from '../sections/contact/Contact';
 
 class HomePage extends React.Component {
   state = {};
@@ -20,6 +21,7 @@ class HomePage extends React.Component {
           <Body color="#2f4152">
             <Experience />
             <Education />
+            <Contact />
           </Body>
         </Header>
       </div>
