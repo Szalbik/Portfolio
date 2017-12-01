@@ -6,7 +6,13 @@ import './Header.scss';
 class Header extends React.Component {
   state = {
     activeItem: 'about',
-    menuItems: ['about', 'skills', 'experience', 'education', 'contact'],
+    menuItems: [
+      { name: 'about', icon: null },
+      { name: 'skills', icon: null },
+      { name: 'experience', icon: null },
+      { name: 'education', icon: null },
+      { name: 'contact', icon: 'mail' },
+    ],
     pageHeight: '0',
     visible: false,
   };
@@ -45,10 +51,11 @@ class Header extends React.Component {
               <Menu fixed={fixedMenu} inverted widths={5}>
                 {menuItems.map(menu => (
                   <Menu.Item
-                    key={menu}
-                    name={menu}
-                    active={activeItem === menu}
+                    key={menu.name}
+                    name={menu.name}
+                    active={activeItem === menu.name}
                     onClick={this.handleItemClick}
+                    icon={menu.icon}
                   />
                 ))}
               </Menu>

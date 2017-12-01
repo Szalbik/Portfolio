@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../sections/header/Header';
-import Body from '../sections/body/Body';
+import Wrapper from '../sections/wrapper/Wrapper';
 import About from '../sections/about/About';
 import Skills from '../sections/skills/Skills';
 import Experience from '../sections/experience/Experience';
@@ -14,15 +14,17 @@ class HomePage extends React.Component {
     return (
       <div>
         <Header>
-          <Body>
+          <Wrapper>
             <About />
             <Skills />
-          </Body>
-          <Body color="#2f4152">
+          </Wrapper>
+          <Wrapper color="#2f4152">
             <Experience />
             <Education />
+          </Wrapper>
+          <Wrapper color="">
             <Contact />
-          </Body>
+          </Wrapper>
         </Header>
       </div>
     );

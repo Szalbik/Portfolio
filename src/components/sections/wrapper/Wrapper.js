@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Body = props => (
+const Wrapper = props => (
   <div style={{ backgroundColor: `${props.color}` }}>
     <div className="ui container">{props.children}</div>
   </div>
 );
 
-Body.propTypes = {
+Wrapper.propTypes = {
   children: PropTypes.node.isRequired,
   color: PropTypes.string,
 };
 
-Body.defaultProps = {
+Wrapper.defaultProps = {
   color: 'white',
 };
 
-export default Body;
+export default Wrapper;

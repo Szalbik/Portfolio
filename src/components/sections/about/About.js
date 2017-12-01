@@ -21,12 +21,6 @@ class About extends React.Component {
                   <List.Content>Gorzów Wielkopolski</List.Content>
                 </List.Item>
                 <List.Item>
-                  <List.Icon name="mail" />
-                  <List.Content>
-                    <a href="mailto:szalbierz.d.k@gmail.com">Kontakt</a>
-                  </List.Content>
-                </List.Item>
-                <List.Item>
                   <List.Icon name="github" />
                   <List.Content>
                     <a

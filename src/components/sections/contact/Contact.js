@@ -1,5 +1,6 @@
 import React from 'react';
 import EmailForm from '../../forms/EmailForm';
+import SectionTitle from '../../section-title/SectionTitle';
 
 class Contact extends React.Component {
   state = {};
@@ -7,7 +8,8 @@ class Contact extends React.Component {
   render() {
     return (
       <div className="contact">
-        <EmailForm />;
+        <SectionTitle text="contact" />
+        <EmailForm />
       </div>
     );
   }
