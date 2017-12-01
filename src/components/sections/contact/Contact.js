@@ -5,7 +5,11 @@ class Contact extends React.Component {
   state = {};
 
   render() {
-    return <EmailForm />;
+    return (
+      <div className="contact">
+        <EmailForm />;
+      </div>
+    );
   }
 }
 

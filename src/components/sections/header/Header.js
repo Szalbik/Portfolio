@@ -49,7 +49,6 @@ class Header extends React.Component {
                     name={menu}
                     active={activeItem === menu}
                     onClick={this.handleItemClick}
-                    disabled={menu === 'contact'}
                   />
                 ))}
               </Menu>
