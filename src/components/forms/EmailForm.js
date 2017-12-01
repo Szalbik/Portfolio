@@ -26,6 +26,7 @@ class EmailForm extends React.Component {
               type="email"
               id="email"
               name="email"
+              placeholder="Twój email"
               value={data.email}
               onChange={this.onChange}
             />
@@ -37,11 +38,12 @@ class EmailForm extends React.Component {
             type="text"
             id="message"
             name="message"
+            placeholder="Wiadomość dla mnie"
             value={data.message}
             onChange={this.onChange}
           />
         </label>
-        <Button type="submit">Send</Button>
+        <Button type="submit">Wyślij</Button>
       </Form>
     );
   }
