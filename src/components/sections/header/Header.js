@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Grid, Sidebar, Button, Segment } from 'semantic-ui-react';
+import { Menu, Grid, Sidebar, Segment } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import './Header.scss';
 
@@ -59,7 +59,7 @@ class Header extends React.Component {
             <div className="ui container">
               <h1 className="header__title">Damian Szalbierz</h1>
               <h3 className="header__subtitle">JUNIOR WEB DEVELOPER</h3>
-              <Menu fixed={fixedMenu} inverted widths={5}>
+              <Menu fixed={fixedMenu} inverted widths="one">
                 {menuItems.map(menu => (
                   <Menu.Item
                     key={menu.name}
@@ -79,7 +79,13 @@ class Header extends React.Component {
             <div className="ui container">
               <h1 className="header__title">Damian Szalbierz</h1>
               <h3 className="header__subtitle">JUNIOR WEB DEVELOPER</h3>
-              <Button onClick={this.toggleVisibility}>Toggle Visibility</Button>
+              <Menu size="huge" fixed={fixedMenu} inverted widths={1}>
+                <Menu.Item
+                  name="Menu"
+                  onClick={this.toggleVisibility}
+                  icon="list layout"
+                />
+              </Menu>
               <Sidebar.Pushable as={Segment}>
                 <Sidebar
                   as={Menu}
