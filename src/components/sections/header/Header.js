@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Grid, Sidebar, Button, Icon, Segment } from 'semantic-ui-react';
+import { Menu, Grid, Sidebar, Button, Segment } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import './Header.scss';
 
@@ -26,6 +26,17 @@ class Header extends React.Component {
   handleItemClick = (e, { name }) => {
     this.setState({ activeItem: name });
     const el = document.querySelector(`.${name}`);
+    const elY = el.offsetTop - el.scrollTop + el.clientTop - 50;
+    if (window.pageYOffset < 100) {
+      window.scrollTo(0, elY);
+    } else {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  handleMobileItemClick = (e, { name }) => {
+    this.setState({ activeItem: name, visible: !this.state.visible });
+    const el = document.querySelectorAll(`.${name}`)[1];
     const elY = el.offsetTop - el.scrollTop + el.clientTop - 50;
     if (window.pageYOffset < 100) {
       window.scrollTo(0, elY);
@@ -79,18 +90,15 @@ class Header extends React.Component {
                   vertical
                   inverted
                 >
-                  <Menu.Item name="home">
-                    <Icon name="home" />
-                    Home
-                  </Menu.Item>
-                  <Menu.Item name="gamepad">
-                    <Icon name="gamepad" />
-                    Games
-                  </Menu.Item>
-                  <Menu.Item name="camera">
-                    <Icon name="camera" />
-                    Channels
-                  </Menu.Item>
+                  {menuItems.map(menu => (
+                    <Menu.Item
+                      key={menu.name}
+                      name={menu.name}
+                      active={activeItem === menu.name}
+                      onClick={this.handleMobileItemClick}
+                      icon={menu.icon}
+                    />
+                  ))}
                 </Sidebar>
                 <Sidebar.Pusher>{this.props.children}</Sidebar.Pusher>
               </Sidebar.Pushable>
