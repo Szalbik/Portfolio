@@ -1,5 +1,6 @@
 import React from 'react';
-import { Menu } from 'semantic-ui-react';
+import { Menu, Grid, Sidebar, Button, Icon, Segment } from 'semantic-ui-react';
+import PropTypes from 'prop-types';
 import './Header.scss';
 
 class Header extends React.Component {
@@ -7,6 +8,7 @@ class Header extends React.Component {
     activeItem: 'about',
     menuItems: ['about', 'skills', 'experience', 'education', 'contact'],
     pageHeight: '0',
+    visible: false,
   };
 
   componentDidMount() {
@@ -26,31 +28,76 @@ class Header extends React.Component {
     }
   };
 
+  toggleVisibility = () => this.setState({ visible: !this.state.visible });
+
   render() {
-    const { activeItem, menuItems, pageHeight } = this.state;
+    const { activeItem, menuItems, pageHeight, visible } = this.state;
 
     const fixedMenu = +pageHeight > 200 ? 'top' : null;
 
     return (
-      <div className="header" ref={this.handleContextRef}>
-        <div className="ui container">
-          <h1 className="header__title">Damian Szalbierz</h1>
-          <h3 className="header__subtitle">JUNIOR WEB DEVELOPER</h3>
-          <Menu fixed={fixedMenu} inverted widths={5}>
-            {menuItems.map(menu => (
-              <Menu.Item
-                key={menu}
-                name={menu}
-                active={activeItem === menu}
-                onClick={this.handleItemClick}
-                disabled={menu === 'contact'}
-              />
-            ))}
-          </Menu>
-        </div>
-      </div>
+      <Grid>
+        <Grid.Column only="computer tablet" computer={16} tablet={16}>
+          <div className="header">
+            <div className="ui container">
+              <h1 className="header__title">Damian Szalbierz</h1>
+              <h3 className="header__subtitle">JUNIOR WEB DEVELOPER</h3>
+              <Menu fixed={fixedMenu} inverted widths={5}>
+                {menuItems.map(menu => (
+                  <Menu.Item
+                    key={menu}
+                    name={menu}
+                    active={activeItem === menu}
+                    onClick={this.handleItemClick}
+                    disabled={menu === 'contact'}
+                  />
+                ))}
+              </Menu>
+            </div>
+          </div>
+          {this.props.children}
+        </Grid.Column>
+        <Grid.Column only="mobile" mobile={16}>
+          <div className="header">
+            <div className="ui container">
+              <h1 className="header__title">Damian Szalbierz</h1>
+              <h3 className="header__subtitle">JUNIOR WEB DEVELOPER</h3>
+              <Button onClick={this.toggleVisibility}>Toggle Visibility</Button>
+              <Sidebar.Pushable as={Segment}>
+                <Sidebar
+                  as={Menu}
+                  animation="push"
+                  width="thin"
+                  visible={visible}
+                  icon="labeled"
+                  vertical
+                  inverted
+                >
+                  <Menu.Item name="home">
+                    <Icon name="home" />
+                    Home
+                  </Menu.Item>
+                  <Menu.Item name="gamepad">
+                    <Icon name="gamepad" />
+                    Games
+                  </Menu.Item>
+                  <Menu.Item name="camera">
+                    <Icon name="camera" />
+                    Channels
+                  </Menu.Item>
+                </Sidebar>
+                <Sidebar.Pusher>{this.props.children}</Sidebar.Pusher>
+              </Sidebar.Pushable>
+            </div>
+          </div>
+        </Grid.Column>
+      </Grid>
     );
   }
 }
+
+Header.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Header;

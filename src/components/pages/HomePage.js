@@ -12,15 +12,16 @@ class HomePage extends React.Component {
   render() {
     return (
       <div>
-        <Header />
-        <Body>
-          <About />
-          <Skills />
-        </Body>
-        <Body color="#2f4152">
-          <Experience />
-          <Education />
-        </Body>
+        <Header>
+          <Body>
+            <About />
+            <Skills />
+          </Body>
+          <Body color="#2f4152">
+            <Experience />
+            <Education />
+          </Body>
+        </Header>
       </div>
     );
   }
