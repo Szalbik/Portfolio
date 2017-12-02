@@ -22,7 +22,7 @@ class HomePage extends React.Component {
             <Experience />
             <Education />
           </Wrapper>
-          <Wrapper color="">
+          <Wrapper color="#f2f3f3">
             <Contact />
           </Wrapper>
         </Header>
