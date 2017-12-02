@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Grid, Sidebar, Segment } from 'semantic-ui-react';
+import { Menu, Grid } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import './Header.scss';
 
@@ -48,7 +48,7 @@ class Header extends React.Component {
   toggleVisibility = () => this.setState({ visible: !this.state.visible });
 
   render() {
-    const { activeItem, menuItems, pageHeight, visible } = this.state;
+    const { activeItem, menuItems, pageHeight } = this.state;
 
     const fixedMenu = +pageHeight > 200 ? 'top' : null;
 
@@ -59,9 +59,10 @@ class Header extends React.Component {
             <div className="ui container">
               <h1 className="header__title">Damian Szalbierz</h1>
               <h3 className="header__subtitle">JUNIOR WEB DEVELOPER</h3>
-              <Menu fixed={fixedMenu} inverted widths="one">
+              <Menu fixed={fixedMenu} inverted widths="five">
                 {menuItems.map(menu => (
                   <Menu.Item
+                    as="dropdown"
                     key={menu.name}
                     name={menu.name}
                     active={activeItem === menu.name}
@@ -79,37 +80,21 @@ class Header extends React.Component {
             <div className="ui container">
               <h1 className="header__title">Damian Szalbierz</h1>
               <h3 className="header__subtitle">JUNIOR WEB DEVELOPER</h3>
-              <Menu size="huge" fixed={fixedMenu} inverted widths={1}>
-                <Menu.Item
-                  name="Menu"
-                  onClick={this.toggleVisibility}
-                  icon="list layout"
-                />
+              <Menu stackable fixed={fixedMenu} inverted widths="five">
+                {menuItems.map(menu => (
+                  <Menu.Item
+                    as="dropdown"
+                    key={menu.name}
+                    name={menu.name}
+                    active={activeItem === menu.name}
+                    onClick={this.handleMobileItemClick}
+                    icon={menu.icon}
+                  />
+                ))}
               </Menu>
-              <Sidebar.Pushable as={Segment}>
-                <Sidebar
-                  as={Menu}
-                  animation="push"
-                  width="thin"
-                  visible={visible}
-                  icon="labeled"
-                  vertical
-                  inverted
-                >
-                  {menuItems.map(menu => (
-                    <Menu.Item
-                      key={menu.name}
-                      name={menu.name}
-                      active={activeItem === menu.name}
-                      onClick={this.handleMobileItemClick}
-                      icon={menu.icon}
-                    />
-                  ))}
-                </Sidebar>
-                <Sidebar.Pusher>{this.props.children}</Sidebar.Pusher>
-              </Sidebar.Pushable>
             </div>
           </div>
+          {this.props.children}
         </Grid.Column>
       </Grid>
     );
