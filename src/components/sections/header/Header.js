@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, Grid } from 'semantic-ui-react';
+import { Menu, Grid, Icon } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import './Header.scss';
 
@@ -7,10 +7,10 @@ class Header extends React.Component {
   state = {
     activeItem: 'about',
     menuItems: [
-      { name: 'about', icon: null },
-      { name: 'skills', icon: null },
-      { name: 'experience', icon: null },
-      { name: 'education', icon: null },
+      { name: 'about', icon: 'vcard outline' },
+      { name: 'skills', icon: 'fork' },
+      { name: 'experience', icon: 'shopping bag' },
+      { name: 'education', icon: 'student' },
       { name: 'contact', icon: 'mail' },
     ],
     pageHeight: '0',
@@ -80,16 +80,18 @@ class Header extends React.Component {
             <div className="ui container">
               <h1 className="header__title">Damian Szalbierz</h1>
               <h3 className="header__subtitle">JUNIOR WEB DEVELOPER</h3>
-              <Menu stackable fixed={fixedMenu} inverted widths="five">
+              <Menu compact fixed={fixedMenu} inverted widths="five">
                 {menuItems.map(menu => (
                   <Menu.Item
-                    as="dropdown"
+                    fitted
                     key={menu.name}
                     name={menu.name}
                     active={activeItem === menu.name}
                     onClick={this.handleMobileItemClick}
                     icon={menu.icon}
-                  />
+                  >
+                    <Icon name={menu.icon} />
+                  </Menu.Item>
                 ))}
               </Menu>
             </div>
