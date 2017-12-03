@@ -11,13 +11,13 @@ const Skills = () => (
     <Grid centered>
       <Grid.Row>
         <Grid.Column computer={3} tablet={5} mobile={8}>
-          <ProgressCircle proc={65} text="html/css" />
+          <ProgressCircle proc={50} text="html/css" />
         </Grid.Column>
         <Grid.Column computer={3} tablet={5} mobile={8}>
-          <ProgressCircle proc={50} text="es5/es6" />
+          <ProgressCircle proc={40} text="es5/es6" />
         </Grid.Column>
         <Grid.Column computer={3} tablet={5} mobile={8}>
-          <ProgressCircle proc={65} text="react/redux" />
+          <ProgressCircle proc={45} text="react/redux" />
         </Grid.Column>
         <Grid.Column computer={3} tablet={5} mobile={8}>
           <ProgressCircle proc={30} text="node" />

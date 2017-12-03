@@ -3,7 +3,7 @@ import { Grid, List, Image } from 'semantic-ui-react';
 import SectionTitle from '../../section-title/SectionTitle';
 import './About.scss';
 import img from '../../../images/image.png';
-import cv from '../../../files/cv.txt';
+import cv from '../../../files/Curriculum Vitae.pdf';
 
 class About extends React.Component {
   state = {};
@@ -47,7 +47,7 @@ class About extends React.Component {
                 <List.Item>
                   <List.Icon name="cloud download" />
                   <List.Content>
-                    <a href={cv} download>
+                    <a href={cv} download="Curriculum Vitae - Damian Szalbierz">
                       Curriculum Vitae
                     </a>
                   </List.Content>
