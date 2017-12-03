@@ -26,7 +26,6 @@ class EmailForm extends React.Component {
     e.preventDefault();
     const errors = this.validate(this.state.data);
     this.setState({ errors });
-    console.log(errors);
     if (Object.keys(errors).length === 0) {
       document.querySelector('.ui.form').submit();
     }
