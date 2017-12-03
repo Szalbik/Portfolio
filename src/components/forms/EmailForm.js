@@ -33,8 +33,8 @@ class EmailForm extends React.Component {
 
   validate = data => {
     const errors = {};
-    if (!isEmail(data.email)) errors.email = 'Email is not valid';
-    if (!data.message) errors.message = 'Message cant be blank';
+    if (!isEmail(data.email)) errors.email = 'Wpisany email jest niepoprawny';
+    if (!data.message) errors.message = 'Wiadomość nie może być pusta';
     return errors;
   };
 
