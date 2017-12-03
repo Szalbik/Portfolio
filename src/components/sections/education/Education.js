@@ -1,6 +1,7 @@
 import React from 'react';
 import SectionTitle from '../../section-title/SectionTitle';
 import HeaderWithTitle from '../../section-header-with-title/HeaderWithTitle';
+import './style.scss';
 
 class Education extends React.Component {
   state = {

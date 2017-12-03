@@ -50,7 +50,7 @@ class EmailForm extends React.Component {
         <Form.Field error={!!errors.email}>
           <label htmlFor="email">
             <input
-              type="email"
+              type="text"
               id="email"
               name="email"
               placeholder="Twój email"
