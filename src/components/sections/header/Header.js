@@ -62,7 +62,6 @@ class Header extends React.Component {
               <Menu fixed={fixedMenu} inverted widths="five">
                 {menuItems.map(menu => (
                   <Menu.Item
-                    as="dropdown"
                     key={menu.name}
                     name={menu.name}
                     active={activeItem === menu.name}
@@ -88,7 +87,6 @@ class Header extends React.Component {
                     name={menu.name}
                     active={activeItem === menu.name}
                     onClick={this.handleMobileItemClick}
-                    icon={menu.icon}
                   >
                     <Icon name={menu.icon} />
                   </Menu.Item>

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Form, Button, TextArea } from 'semantic-ui-react';
+import isEmail from 'validator/lib/isEmail';
+import InlineError from '../messages/InlineError';
 
 class EmailForm extends React.Component {
   state = {
@@ -7,20 +9,46 @@ class EmailForm extends React.Component {
       email: '',
       message: '',
     },
+    errors: {},
   };
 
   onChange = e => {
-    const { data } = this.state;
-
     e.preventDefault();
-    this.setState({ ...data, data: { [e.target.name]: e.target.value } });
+    const { data, errors } = this.state;
+
+    this.setState({
+      data: { ...data, [e.target.name]: e.target.value },
+      errors: { ...errors, [e.target.name]: '' },
+    });
+  };
+
+  onSubmit = e => {
+    e.preventDefault();
+    const errors = this.validate(this.state.data);
+    this.setState({ errors });
+    console.log(errors);
+    if (Object.keys(errors).length === 0) {
+      document.querySelector('.ui.form').submit();
+    }
+  };
+
+  validate = data => {
+    const errors = {};
+    if (!isEmail(data.email)) errors.email = 'Email is not valid';
+    if (!data.message) errors.message = 'Message cant be blank';
+    return errors;
   };
 
   render() {
-    const { data } = this.state;
+    const { data, errors } = this.state;
+
     return (
-      <Form method="post" action="https://formspree.io/szalbierz.d.k@gmail.com">
-        <Form.Field>
+      <Form
+        onSubmit={this.onSubmit}
+        method="post"
+        action="https://formspree.io/szalbierz.d.k@gmail.com"
+      >
+        <Form.Field error={!!errors.email}>
           <label htmlFor="email">
             <input
               type="email"
@@ -31,18 +59,24 @@ class EmailForm extends React.Component {
               onChange={this.onChange}
             />
           </label>
+          {!!errors.email && <InlineError text={errors.email} />}
         </Form.Field>
 
-        <label htmlFor="message">
-          <TextArea
-            type="text"
-            id="message"
-            name="message"
-            placeholder="Wiadomość dla mnie"
-            value={data.message}
-            onChange={this.onChange}
-          />
-        </label>
+        <Form.Field error={!!errors.message}>
+          <label htmlFor="message">
+            <TextArea
+              error={!!errors.message}
+              type="text"
+              id="message"
+              name="message"
+              placeholder="Wiadomość dla mnie"
+              value={data.message}
+              onChange={this.onChange}
+            />
+          </label>
+          {!!errors.message && <InlineError text={errors.message} />}
+        </Form.Field>
+
         <Button type="submit">Wyślij</Button>
       </Form>
     );

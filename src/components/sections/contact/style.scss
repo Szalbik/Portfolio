@@ -7,22 +7,4 @@ form.ui.form {
       opacity: 0.9;
     }
   }
-
-  textarea#message {
-    border-color: #2f4152;
-    color: #2f4152;
-    &::placeholder {
-      color: #2f4152;
-      opacity: 0.6;
-    }
-  }
-
-  input#email {
-    border-color: #2f4152;
-    color: #2f4152;
-    &::placeholder {
-      color: #2f4152;
-      opacity: 0.6;
-    }
-  }
 }
