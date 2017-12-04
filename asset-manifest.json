@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.4215a128.css",
   "main.css.map": "static/css/main.4215a128.css.map",
-  "main.js": "static/js/main.40aec27f.js",
-  "main.js.map": "static/js/main.40aec27f.js.map",
+  "main.js": "static/js/main.f6753005.js",
+  "main.js.map": "static/js/main.f6753005.js.map",
   "static/media/Curriculum Vitae.pdf": "static/media/Curriculum Vitae.159248e4.pdf",
   "static/media/flags.png": "static/media/flags.9c74e172.png",
   "static/media/icons.eot": "static/media/icons.674f50d2.eot",
@@ -10,5 +10,6 @@
   "static/media/icons.ttf": "static/media/icons.b06871f2.ttf",
   "static/media/icons.woff": "static/media/icons.fee66e71.woff",
   "static/media/icons.woff2": "static/media/icons.af7ae505.woff2",
-  "static/media/profile.gif": "static/media/profile.81cae026.gif"
+  "static/media/profile.gif": "static/media/profile.81cae026.gif",
+  "static/media/todoApp.png": "static/media/todoApp.018fdb18.png"
 }
