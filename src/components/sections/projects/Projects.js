@@ -1,7 +1,7 @@
 import React from 'react';
 import { Segment, Reveal, Image, List, Modal } from 'semantic-ui-react';
 import SectionTitle from '../../section-title/SectionTitle';
-import img3 from '../../../images/todoApp.png';
+import todoApp from '../../../images/todoApp.png';
 import './style.scss';
 
 class Projects extends React.Component {
@@ -14,7 +14,7 @@ class Projects extends React.Component {
         <Segment raised compact>
           <Reveal animated="move right">
             <Reveal.Content visible>
-              <Image src={img3} size="small" />
+              <Image src={todoApp} size="small" />
             </Reveal.Content>
             <Reveal.Content hidden>
               <List>
@@ -24,7 +24,7 @@ class Projects extends React.Component {
                     <Modal trigger={<span>Preview</span>}>
                       <Modal.Header>Todo App (React / Redux)</Modal.Header>
                       <Modal.Content image>
-                        <Image wrapped size="huge" src={img3} />
+                        <Image wrapped size="huge" src={todoApp} />
                       </Modal.Content>
                     </Modal>
                   </List.Content>
