@@ -80,10 +80,10 @@ class About extends React.Component {
               <p>
                 Nazywam się Damian Szalbierz. Aktualnie mieszkam w Gorzowie
                 Wielkopolskim i studiuję w Akademii Jakuba z Paradyża. Chciałbym
-                znaleźć pracę jako Junior Front-End Developer. Aktualnie
-                poświęcam cały swój wolny czas na doskonalenie umiejętności HTML
-                | CSS | JS (ES5, ES6, ES7). Posiadam to co każdy junior powinien
-                mieć - chęc i niekończący się zapał do nauki programowania.
+                znaleźć pracę jako Junior Front-End Developer. Cały swój wolny
+                czas poświęcam na doskonalenie umiejętności HTML | CSS | JS
+                (ES5, ES6, ES7). Posiadam to co każdy junior powinien mieć -
+                chęc i niekończący się zapał do nauki programowania.
               </p>
             </Grid.Column>
 
