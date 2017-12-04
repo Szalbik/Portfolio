@@ -10,7 +10,7 @@ class Header extends React.Component {
       { name: 'about', icon: 'vcard outline' },
       { name: 'skills', icon: 'fork' },
       // { name: 'experience', icon: 'shopping bag' },
-      // { name: 'education', icon: 'student' },
+      { name: 'projects', icon: 'briefcase' },
       { name: 'contact', icon: 'mail' },
     ],
     pageHeight: '0',
@@ -59,7 +59,7 @@ class Header extends React.Component {
             <div className="ui container">
               <h1 className="header__title">Damian Szalbierz</h1>
               <h3 className="header__subtitle">JUNIOR WEB DEVELOPER</h3>
-              <Menu fixed={fixedMenu} inverted widths={3}>
+              <Menu fixed={fixedMenu} inverted widths={4}>
                 {menuItems.map(menu => (
                   <Menu.Item
                     key={menu.name}
@@ -79,7 +79,7 @@ class Header extends React.Component {
             <div className="ui container">
               <h1 className="header__title">Damian Szalbierz</h1>
               <h3 className="header__subtitle">JUNIOR WEB DEVELOPER</h3>
-              <Menu compact fixed={fixedMenu} inverted widths={3}>
+              <Menu compact fixed={fixedMenu} inverted widths={4}>
                 {menuItems.map(menu => (
                   <Menu.Item
                     fitted
