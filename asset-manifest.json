@@ -1,13 +1,14 @@
 {
   "main.css": "static/css/main.4215a128.css",
   "main.css.map": "static/css/main.4215a128.css.map",
-  "main.js": "static/js/main.e2358477.js",
-  "main.js.map": "static/js/main.e2358477.js.map",
-  "static/media/cv.txt": "static/media/cv.4e82904b.txt",
+  "main.js": "static/js/main.f08efa6c.js",
+  "main.js.map": "static/js/main.f08efa6c.js.map",
+  "static/media/Curriculum Vitae.pdf": "static/media/Curriculum Vitae.ec8f3901.pdf",
   "static/media/flags.png": "static/media/flags.9c74e172.png",
   "static/media/icons.eot": "static/media/icons.674f50d2.eot",
   "static/media/icons.svg": "static/media/icons.912ec66d.svg",
   "static/media/icons.ttf": "static/media/icons.b06871f2.ttf",
   "static/media/icons.woff": "static/media/icons.fee66e71.woff",
-  "static/media/icons.woff2": "static/media/icons.af7ae505.woff2"
+  "static/media/icons.woff2": "static/media/icons.af7ae505.woff2",
+  "static/media/profile.gif": "static/media/profile.81cae026.gif"
 }
