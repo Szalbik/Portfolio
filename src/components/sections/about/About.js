@@ -78,10 +78,12 @@ class About extends React.Component {
             <Grid.Column only="computer tablet" computer={12} tablet={11}>
               <Image src={img} alt="image" width={220} floated="left" rounded />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Nazywam się Damian Szalbierz. Aktualnie mieszkam w Gorzowie
+                Wielkopolskim i studiuję w Akademii Jakuba z Paradyża. Chciałbym
+                znaleźć pracę jako Junior Front-End Developer. Aktualnie
+                poświęcam cały swój wolny czas na doskonalenie umiejętności HTML
+                | CSS | JS (ES5, ES6, ES7). Posiadam to co każdy junior powinien
+                mieć - chęc i niekończący się zapał do nauki programowania.
               </p>
             </Grid.Column>
 
@@ -90,10 +92,12 @@ class About extends React.Component {
             </Grid.Column>
             <Grid.Column only="mobile" mobile={16}>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                Nazywam się Damian Szalbierz. Aktualnie mieszkam w Gorzowie
+                Wielkopolskim i studiuję w Akademii Jakuba z Paradyża. Chciałbym
+                znaleźć pracę jako Junior Front-End Developer. Aktualnie
+                poświęcam cały swój wolny czas na doskonalenie umiejętności HTML
+                | CSS | JS (ES5, ES6, ES7). Posiadam to co każdy junior powinien
+                mieć - chęc i niekończący się zapał do nauki programowania.
               </p>
             </Grid.Column>
           </Grid.Row>
