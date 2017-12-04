@@ -3,6 +3,9 @@ form.ui.form {
     margin-top: 20px;
     color: #ebeced;
     background-color: #2f4152;
+    -webkit-box-shadow: 12px -13px 28px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 12px -13px 28px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px -13px 28px -12px rgba(0, 0, 0, 0.75);
     &:hover {
       opacity: 0.9;
     }
