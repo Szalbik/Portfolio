@@ -77,13 +77,14 @@ class About extends React.Component {
 
             <Grid.Column only="computer tablet" computer={12} tablet={11}>
               <Image src={img} alt="image" width={220} floated="left" rounded />
+              <h2>Cześć jestem Damian. </h2>
               <p>
-                Nazywam się Damian Szalbierz. Aktualnie mieszkam w Gorzowie
-                Wielkopolskim i studiuję w Akademii Jakuba z Paradyża. Chciałbym
-                znaleźć pracę jako Junior Front-End Developer. Cały swój wolny
-                czas poświęcam na doskonalenie umiejętności HTML | CSS | JS
-                (ES5, ES6, ES7). Posiadam to co każdy junior powinien mieć -
-                chęc i niekończący się zapał do nauki programowania.
+                Aktualnie mieszkam w Gorzowie Wielkopolskim, jestem studentem
+                Akademii im. Jakuba z Paradyża na 7 semestrze informatyki.
+                Chciałbym rozwijać się jako Junior Front-End Developer. Swój
+                wolny czas poświęcam na doskonalenie umiejętności HTML | CSS |
+                JS (ES5, ES6, ES7). Posiadam to co każdy junior powinien mieć -
+                chęć i niekończący się zapał do nauki programowania.
               </p>
             </Grid.Column>
 

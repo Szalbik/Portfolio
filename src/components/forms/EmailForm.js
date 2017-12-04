@@ -64,7 +64,6 @@ class EmailForm extends React.Component {
         <Form.Field error={!!errors.message}>
           <label htmlFor="message">
             <TextArea
-              error={!!errors.message}
               type="text"
               id="message"
               name="message"
