@@ -14,7 +14,7 @@ class Projects extends React.Component {
         <Segment raised compact>
           <Reveal animated="move right">
             <Reveal.Content visible>
-              <Image src={todoApp} size="small" />
+              <Image src={todoApp} size="medium" />
             </Reveal.Content>
             <Reveal.Content hidden>
               <List>

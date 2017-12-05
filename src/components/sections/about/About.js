@@ -75,7 +75,12 @@ class About extends React.Component {
               </List>
             </Grid.Column>
 
-            <Grid.Column only="computer tablet" computer={12} tablet={11}>
+            <Grid.Column
+              className="description"
+              only="computer tablet"
+              computer={12}
+              tablet={11}
+            >
               <Image src={img} alt="image" width={220} floated="left" rounded />
               <h2>Cześć jestem Damian. </h2>
               <p>

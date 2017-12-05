@@ -14,16 +14,17 @@
   a i {
     color: rgba(0, 0, 0, 0.87);
   }
+  .description {
+    p {
+      margin-top: 20px;
+      text-transform: none;
+      color: #2f4152;
+    }
 
-  p {
-    margin-top: 20px;
-    text-transform: none;
-    color: #2f4152;
-  }
-
-  h2 {
-    color: #2f4152;
-    text-align: center;
+    h2 {
+      color: #2f4152;
+      text-align: center;
+    }
   }
 
   img {
