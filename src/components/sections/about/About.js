@@ -84,12 +84,12 @@ class About extends React.Component {
               <Image src={img} alt="image" width={220} floated="left" rounded />
               <h2>Cześć jestem Damian. </h2>
               <p>
-                Aktualnie mieszkam w Gorzowie Wielkopolskim, jestem studentem
-                Akademii im. Jakuba z Paradyża na 7 semestrze informatyki.
-                Chciałbym rozwijać się jako Junior Front-End Developer. Swój
-                wolny czas poświęcam na doskonalenie umiejętności HTML | CSS |
-                JS (ES5, ES6, ES7). Posiadam to co każdy junior powinien mieć -
-                chęć i niekończący się zapał do nauki programowania.
+                Aktualnie mieszkam w Poznaniu, jestem absolwentem
+                Akademii im. Jakuba z Paradyża w Gorzowie Wielkopolskim na wydziale
+                informatyki. Chciałbym rozwijać się jako Junior Front-End Developer.
+                Swój wolny czas poświęcam na doskonalenie umiejętności HTML | CSS |
+                JS (ES5, ES6, ES7). Dobrze posługuję się językiem Ruby i frameworkiem Ruby on Rails.
+                Posiadam to co każdy junior powinien mieć - chęć i niekończący się zapał do nauki programowania.
               </p>
             </Grid.Column>
 
