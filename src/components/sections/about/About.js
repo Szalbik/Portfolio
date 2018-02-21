@@ -92,21 +92,23 @@ class About extends React.Component {
                 Posiadam to co każdy junior powinien mieć - chęć i niekończący się zapał do nauki programowania.
               </p>
             </Grid.Column>
-
-            <Grid.Column only="mobile" mobile={16}>
-              <Image src={img} alt="image" width={220} rounded fluid />
-            </Grid.Column>
-            <Grid.Column only="mobile" mobile={16}>
-              <p>
-                Nazywam się Damian Szalbierz. Aktualnie mieszkam w Gorzowie
-                Wielkopolskim i studiuję w Akademii Jakuba z Paradyża. Chciałbym
-                znaleźć pracę jako Junior Front-End Developer. Aktualnie
-                poświęcam cały swój wolny czas na doskonalenie umiejętności HTML
-                | CSS | JS (ES5, ES6, ES7). Posiadam to co każdy junior powinien
-                mieć - chęc i niekończący się zapał do nauki programowania.
-              </p>
-            </Grid.Column>
           </Grid.Row>
+            <Grid.Row centered>
+              <Grid.Column only="mobile" mobile={12}>
+                <Image src={img} alt="image" width={220} rounded fluid />
+              </Grid.Column>
+
+              <Grid.Column only="mobile" mobile={16}>
+                <p>
+                  Nazywam się Damian Szalbierz. Aktualnie mieszkam w Gorzowie
+                  Wielkopolskim i studiuję w Akademii Jakuba z Paradyża. Chciałbym
+                  znaleźć pracę jako Junior Front-End Developer. Aktualnie
+                  poświęcam cały swój wolny czas na doskonalenie umiejętności HTML
+                  | CSS | JS (ES5, ES6, ES7). Posiadam to co każdy junior powinien
+                  mieć - chęc i niekończący się zapał do nauki programowania.
+                </p>
+              </Grid.Column>
+            </Grid.Row>
         </Grid>
       </div>
     );

@@ -79,7 +79,7 @@ class Header extends React.Component {
             <div className="ui container">
               <h1 className="header__title">Damian Szalbierz</h1>
               <h3 className="header__subtitle">JUNIOR WEB DEVELOPER</h3>
-              <Menu compact fixed={fixedMenu} inverted widths={4}>
+              <Menu compact fixed={fixedMenu} inverted widths={3}>
                 {menuItems.map(menu => (
                   <Menu.Item
                     fitted
