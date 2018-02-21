@@ -5,7 +5,7 @@ import About from '../sections/about/About';
 import Skills from '../sections/skills/Skills';
 // import Experience from '../sections/experience/Experience';
 // import Education from '../sections/education/Education';
-import Projects from '../sections/projects/Projects';
+// import Projects from '../sections/projects/Projects';
 import Contact from '../sections/contact/Contact';
 
 class HomePage extends React.Component {
@@ -19,9 +19,9 @@ class HomePage extends React.Component {
             <About />
             <Skills />
           </Wrapper>
-          <Wrapper color="#2f4152">
+          {/* <Wrapper color="#2f4152">
             <Projects />
-          </Wrapper>
+          </Wrapper> */}
           <Wrapper color="#f2f3f3">
             <Contact />
           </Wrapper>
