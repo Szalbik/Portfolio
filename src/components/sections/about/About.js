@@ -82,14 +82,9 @@ class About extends React.Component {
               tablet={11}
             >
               <Image src={img} alt="image" width={220} floated="left" rounded />
-              <h2>Cześć jestem Damian. </h2>
+              <h2>Hello I{'\''}m Damian.</h2>
               <p>
-                Aktualnie mieszkam w Poznaniu, jestem absolwentem
-                Akademii im. Jakuba z Paradyża w Gorzowie Wielkopolskim na wydziale
-                informatyki. Chciałbym rozwijać się jako Junior Front-End Developer.
-                Swój wolny czas poświęcam na doskonalenie umiejętności HTML | CSS |
-                JS (ES5, ES6, ES7). Dobrze posługuję się językiem Ruby i frameworkiem Ruby on Rails.
-                Posiadam to co każdy junior powinien mieć - chęć i niekończący się zapał do nauki programowania.
+                I live in Poznan and I’m studying on Poznan University of Technology.  My free time I spend on increasing my skills in front-end development. My favorite frameworks are React,  Nods.js and Ruby on Rails. At the same time, perfect my html and css skills. I have what every junior should have - a willingness and endless enthusiasm for learning programming.
               </p>
             </Grid.Column>
           </Grid.Row>
@@ -99,13 +94,9 @@ class About extends React.Component {
               </Grid.Column>
 
               <Grid.Column only="mobile" mobile={16}>
+                <h2>Hello I{'\''}m Damian.</h2>
                 <p>
-                  Nazywam się Damian Szalbierz. Aktualnie mieszkam w Gorzowie
-                  Wielkopolskim i studiuję w Akademii Jakuba z Paradyża. Chciałbym
-                  znaleźć pracę jako Junior Front-End Developer. Aktualnie
-                  poświęcam cały swój wolny czas na doskonalenie umiejętności HTML
-                  | CSS | JS (ES5, ES6, ES7). Posiadam to co każdy junior powinien
-                  mieć - chęc i niekończący się zapał do nauki programowania.
+                  I live in Poznan and I’m studying on Poznan University of Technology.  My free time I spend on increasing my skills in front-end development. My favorite frameworks are React,  Nods.js and Ruby on Rails. At the same time, perfect my html and css skills. I have what every junior should have - a willingness and endless enthusiasm for learning programming.
                 </p>
               </Grid.Column>
             </Grid.Row>

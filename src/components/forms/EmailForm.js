@@ -33,8 +33,8 @@ class EmailForm extends React.Component {
 
   validate = data => {
     const errors = {};
-    if (!isEmail(data.email)) errors.email = 'Wpisany email jest niepoprawny';
-    if (!data.message) errors.message = 'Wiadomość nie może być pusta';
+    if (!isEmail(data.email)) errors.email = 'The email you entered is incorrect';
+    if (!data.message) errors.message = 'The message can\'t be empty';
     return errors;
   };
 
@@ -53,7 +53,7 @@ class EmailForm extends React.Component {
               type="text"
               id="email"
               name="email"
-              placeholder="Twój email"
+              placeholder="Your email"
               value={data.email}
               onChange={this.onChange}
             />
@@ -67,7 +67,7 @@ class EmailForm extends React.Component {
               type="text"
               id="message"
               name="message"
-              placeholder="Wiadomość dla mnie"
+              placeholder="Message for me"
               value={data.message}
               onChange={this.onChange}
             />
@@ -75,7 +75,7 @@ class EmailForm extends React.Component {
           {!!errors.message && <InlineError text={errors.message} />}
         </Form.Field>
 
-        <Button type="submit">Wyślij</Button>
+        <Button type="submit">Send</Button>
       </Form>
     );
   }
