@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid, List, Image } from 'semantic-ui-react';
 import SectionTitle from '../../section-title/SectionTitle';
 import './About.scss';
-import img from '../../../images/dyplomowe.jpg';
+import img from '../../../images/caricature_right.png';
 import cv from '../../../files/Curriculum Vitae.pdf';
 
 class About extends React.Component {
