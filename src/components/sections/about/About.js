@@ -81,7 +81,7 @@ class About extends React.Component {
               computer={12}
               tablet={11}
             >
-              <Image src={img} alt="image" width={220} floated="left" rounded />
+              <Image src={img} alt="image" width={250} floated="left" circular />
               <h2>Hello I{'\''}m Damian.</h2>
               <p>
                 I live in Poznan and I’m studying on Poznan University of Technology.  My free time I spend on increasing my skills in front-end development. My favorite frameworks are React,  Nods.js and Ruby on Rails. At the same time, perfect my html and css skills. I have what every junior should have - a willingness and endless enthusiasm for learning programming.
